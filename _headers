@@ -1,0 +1,11 @@
+# Cloudflare Pages security & caching headers.
+# Cloudflare reads this file automatically — no configuration needed.
+
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+/assets/*
+  Cache-Control: public, max-age=3600

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thick Envelope — A Free College Admissions Hub</title>
+  <meta name="description" content="Thick Envelope is a free, student-led college admissions hub: resources, deadlines, campus tour guidance, and student ambassadors who answer honestly.">
+  <meta name="theme-color" content="#8E1C2A">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Thick Envelope — A Free College Admissions Hub">
+  <meta property="og:description" content="Deadlines you can trust, resources that are actually free, and student ambassadors who answer honestly.">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%238E1C2A'/><text x='16' y='22' font-family='Georgia,serif' font-size='15' font-weight='700' fill='white' text-anchor='middle'>TE</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body data-page="home">
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <span class="eyebrow eyebrow--light" data-config="hero.eyebrow">Free · Independent · Student-Led</span>
+        <h1 data-config="hero.title">Thick Envelope</h1>
+        <p class="hero-subtitle" data-config="hero.subtitle">
+          The college admissions process, explained plainly — deadlines you can trust,
+          resources that are actually free, and student ambassadors who answer honestly.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn--light" href="resources.html">Explore Resources</a>
+          <a class="btn btn--ghost-light" href="deadlines.html">See Key Deadlines</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STATS STRIP ================= -->
+    <section class="stats-strip" aria-label="Thick Envelope at a glance">
+      <div class="container">
+        <ul class="stats-list" id="stats-list"></ul>
+      </div>
+    </section>
+
+    <!-- ================= SECTION CARDS ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow">Start Here</span>
+          <h2>Three places to begin</h2>
+          <p>
+            Most families arrive with the same three questions: what do we need, when is it due,
+            and who can we actually ask? Each one has a home below.
+          </p>
+        </div>
+
+        <div class="grid grid--3" id="home-cards"></div>
+      </div>
+    </section>
+
+    <!-- ================= HOW IT WORKS ================= -->
+    <section class="section section--cream">
+      <div class="container">
+        <div class="grid grid--2" style="align-items: start; gap: 3rem;">
+
+          <div>
+            <span class="eyebrow">How It Works</span>
+            <h2>Built for families, not for search engines</h2>
+            <p class="lead">
+              Admissions advice online is either behind a paywall or written to sell something.
+              Thick Envelope is neither. Everything here is free, and the people answering your
+              questions are students who finished this process recently enough to remember it.
+            </p>
+            <div class="btn-row mt-6">
+              <a class="btn btn--primary" href="ambassadors.html">Meet the ambassadors</a>
+              <a class="btn btn--outline" href="tours.html">Plan a campus visit</a>
+            </div>
+          </div>
+
+          <ol class="steps">
+            <li>
+              <h3>Find your deadlines</h3>
+              <p>
+                Start with the calendar. Knowing the four or five dates that genuinely matter
+                removes most of the anxiety from the next six months.
+              </p>
+            </li>
+            <li>
+              <h3>Work through the resources</h3>
+              <p>
+                Essay frameworks, aid walkthroughs, and checklists — sorted by where you are in
+                the process rather than by category.
+              </p>
+            </li>
+            <li>
+              <h3>Ask a real student</h3>
+              <p>
+                Our ambassadors answer the questions a brochure never will, from dining hall food
+                to whether the advising is any good.
+              </p>
+            </li>
+            <li>
+              <h3>Visit the campus</h3>
+              <p>
+                Use our tour guidance so the visit tells you something useful, then compare notes
+                while the impressions are fresh.
+              </p>
+            </li>
+          </ol>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NEWSLETTER ================= -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="newsletter">
+          <div class="newsletter-inner">
+            <span class="eyebrow eyebrow--light">Weekly Email</span>
+            <h2 data-config="newsletter.heading">Never miss a deadline</h2>
+            <p data-config="newsletter.body">
+              One short email each week: upcoming deadlines, new scholarships, and one piece of
+              admissions advice worth reading. Free, and always will be.
+            </p>
+
+            <form class="newsletter-form" novalidate>
+              <div class="field">
+                <label class="visually-hidden" for="newsletter-email-home">Email address</label>
+                <input
+                  type="email"
+                  id="newsletter-email-home"
+                  name="email"
+                  autocomplete="email"
+                  placeholder="you@example.com"
+                  required>
+              </div>
+              <button class="btn btn--light" type="submit" data-config="newsletter.buttonLabel">Subscribe</button>
+            </form>
+
+            <p class="form-message" role="status" aria-live="polite" hidden></p>
+            <p class="newsletter-note" data-config="newsletter.reassurance">No spam. Unsubscribe in one click.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/pages/home.js"></script>
+</body>
+</html>

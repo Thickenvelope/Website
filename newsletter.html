@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Newsletter — Thick Envelope</title>
+  <meta name="description" content="One short email each week: upcoming college admissions deadlines, new scholarships, and one piece of advice worth reading. Free.">
+  <meta name="theme-color" content="#8E1C2A">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%238E1C2A'/><text x='16' y='22' font-family='Georgia,serif' font-size='15' font-weight='700' fill='white' text-anchor='middle'>TE</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body data-page="newsletter">
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+
+    <section class="page-header">
+      <div class="container">
+        <span class="eyebrow eyebrow--light">Weekly Email</span>
+        <h1>The Thick Envelope Newsletter</h1>
+        <p>
+          The deadlines coming up, the scholarships worth your time, and one piece of advice.
+          Short enough to read on a phone in the school pickup line.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="newsletter newsletter--light" style="margin-bottom: 3rem;">
+          <div class="newsletter-inner">
+            <span class="eyebrow">Sign Up</span>
+            <h2>Join for free</h2>
+            <p>
+              One email a week during the admissions season, less often over the summer.
+              Unsubscribe whenever you like.
+            </p>
+
+            <form class="newsletter-form" novalidate>
+              <div class="field">
+                <label class="visually-hidden" for="newsletter-email-page">Email address</label>
+                <input
+                  type="email"
+                  id="newsletter-email-page"
+                  name="email"
+                  autocomplete="email"
+                  placeholder="you@example.com"
+                  required>
+              </div>
+              <button class="btn btn--primary" type="submit">Subscribe</button>
+            </form>
+
+            <p class="form-message" role="status" aria-live="polite" hidden></p>
+            <p class="newsletter-note">No spam. Unsubscribe in one click.</p>
+          </div>
+        </div>
+
+        <div class="grid grid--3">
+
+          <article class="card card--feature">
+            <div class="card-body">
+              <span class="eyebrow">Every Issue</span>
+              <h3>What is due soon</h3>
+              <p>
+                The deadlines landing in the next two weeks, so nothing arrives as a surprise at
+                eleven at night.
+              </p>
+            </div>
+          </article>
+
+          <article class="card card--feature">
+            <div class="card-body">
+              <span class="eyebrow">Every Issue</span>
+              <h3>Money worth chasing</h3>
+              <p>
+                New scholarships with real award amounts and reasonable applicant pools — not
+                lotteries dressed up as awards.
+              </p>
+            </div>
+          </article>
+
+          <article class="card card--feature">
+            <div class="card-body">
+              <span class="eyebrow">Every Issue</span>
+              <h3>One honest answer</h3>
+              <p>
+                A question from a reader, answered by a student who has actually been through
+                that part of the process.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section--cream">
+      <div class="container container--narrow">
+
+        <div class="section-head section-head--center">
+          <span class="eyebrow">Questions</span>
+          <h2>Before you sign up</h2>
+        </div>
+
+        <div class="panel" style="margin-bottom: 1.5rem;">
+          <h3>Is it really free?</h3>
+          <p class="mb-0">
+            Yes. The newsletter is free and the site has no paywall. If we ever add a paid product,
+            everything currently free stays free.
+          </p>
+        </div>
+
+        <div class="panel" style="margin-bottom: 1.5rem;">
+          <h3>Will you sell my email address?</h3>
+          <p class="mb-0">
+            No. We do not sell, rent, or share subscriber emails. You will only ever hear from
+            Thick Envelope.
+          </p>
+        </div>
+
+        <div class="panel">
+          <h3>Is this for students or parents?</h3>
+          <p class="mb-0">
+            Both. It is written so a parent can follow it without knowing the jargon, and so a
+            student does not feel talked down to.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
